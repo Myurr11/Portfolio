@@ -96,6 +96,12 @@ const experience = [
 
 const education = [
   {
+    degree: "Master of Science in Applied Computer Science",
+    school: "Hochschule Schmalkalden, Germany",
+    period: "Oct 2026 — Present",
+    result: "",
+  },
+  {
     degree: "Bachelor of Computer Applications (BCA)",
     school: "Bharati Vidyapeeth Deemed University, Department of Management Studies",
     period: "2022 — 2025",
@@ -183,11 +189,6 @@ function Index() {
                   <defs>
                     <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
                   </defs>
-                  <text className="fill-[var(--accent)] font-mono text-[9.5px] uppercase tracking-[2.5px]">
-                    <textPath href="#circlePath">
-                      Open to work • Open to work •
-                    </textPath>
-                  </text>
                 </svg>
               </div>
             </div>
@@ -421,7 +422,6 @@ function Index() {
                 {[
                   { label: "GitHub", href: "https://github.com/Myurr11" },
                   { label: "LinkedIn", href: "https://www.linkedin.com/in/mayur-joshi-myu11/" },
-                  { label: "Portfolio", href: "#top" },
                 ].map((s) => (
                   <li key={s.label}>
                     <a
@@ -443,14 +443,25 @@ function Index() {
               </h3>
               <ul className="mt-3 space-y-2 text-sm font-medium">
                 <li>
-                  <a href="tel:+917420918545" className="hover:opacity-50">
-                    +91 74209 18545
-                  </a>
-                </li>
-                <li>
                   <a href="mailto:joshimayur1110@gmail.com" className="hover:opacity-50">
                     joshimayur1110@gmail.com
                   </a>
+                </li>
+                <li>
+                  <a href="tel:+4915231813860" className="hover:opacity-50">
+                    +49 1523 1813860
+                  </a>
+                  <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                    Germany
+                  </span>
+                </li>
+                <li>
+                  <a href="tel:+917420918545" className="hover:opacity-50">
+                    +91 74209 18545
+                  </a>
+                  <span className="ml-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                    India
+                  </span>
                 </li>
               </ul>
               <a
